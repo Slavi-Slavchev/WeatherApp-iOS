@@ -83,7 +83,7 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="369"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="O13-rb-fXK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="O13-rb-fXK">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="O13-rb-fXK" id="eyV-yv-vw9">
@@ -104,13 +104,13 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="141" height="58"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODW-aw-HMN">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="37"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="37.5"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Snow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxa-La-kNv">
-                                                                    <rect key="frame" x="0.0" y="37" width="141" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="37.5" width="141" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -121,13 +121,13 @@
                                                             <rect key="frame" x="141" y="0.0" width="141" height="58"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="76.5°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvd-8U-csM">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="25"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="37.5"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="65.3°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGV-Cy-J9l">
-                                                                    <rect key="frame" x="0.0" y="25" width="141" height="33"/>
+                                                                    <rect key="frame" x="0.0" y="37.5" width="141" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -170,12 +170,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="currentTempLable" destination="s4H-2i-JGQ" id="XSe-TA-VAl"/>
-                        <outlet property="currentWeatherImage" destination="NxC-7e-VwW" id="gq7-Lr-rsm"/>
-                        <outlet property="currentWeatherTypeLable" destination="Hl6-Z0-9Jo" id="kfC-Ff-2Id"/>
-                        <outlet property="dateLable" destination="LBi-Kj-hA3" id="6Xr-2Y-Jgw"/>
-                        <outlet property="locationLabel" destination="SpS-HE-Bbz" id="Hj6-D9-Qej"/>
-                        <outlet property="tableView" destination="6oh-v1-fet" id="HEj-6J-5wL"/>
+                        <outlet property="currentTempLabel" destination="s4H-2i-JGQ" id="5gM-fn-HEm"/>
+                        <outlet property="currentWeatherImage" destination="NxC-7e-VwW" id="47F-cl-HVQ"/>
+                        <outlet property="currentWeatherTypeLabel" destination="Hl6-Z0-9Jo" id="yKN-6A-Dwe"/>
+                        <outlet property="dateLabel" destination="LBi-Kj-hA3" id="6x6-6p-zGp"/>
+                        <outlet property="locationLabel" destination="SpS-HE-Bbz" id="aXs-NB-Vn0"/>
+                        <outlet property="tableView" destination="6oh-v1-fet" id="NTa-CF-1dQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
