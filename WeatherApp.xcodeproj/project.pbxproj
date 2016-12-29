@@ -10,7 +10,7 @@
 		0D70FD29DD1A68D71E02D1BF /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2493307A14D7D3FCBC5C1B69 /* Pods_WeatherAppTests.framework */; };
 		2F09CC558CE84F37351BAC02 /* Pods_WeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B97AABC5C17516736F627D3 /* Pods_WeatherAppUITests.framework */; };
 		85C171791E159133007BC2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C171781E159133007BC2C3 /* AppDelegate.swift */; };
-		85C1717B1E159133007BC2C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C1717A1E159133007BC2C3 /* ViewController.swift */; };
+		85C1717B1E159133007BC2C3 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C1717A1E159133007BC2C3 /* WeatherVC.swift */; };
 		85C1717E1E159133007BC2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C1717C1E159133007BC2C3 /* Main.storyboard */; };
 		85C171801E159133007BC2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C1717F1E159133007BC2C3 /* Assets.xcassets */; };
 		85C171831E159133007BC2C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C171811E159133007BC2C3 /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		84EBBACE406CCDBDEF38317A /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		85C171751E159133007BC2C3 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C171781E159133007BC2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85C1717A1E159133007BC2C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85C1717A1E159133007BC2C3 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		85C1717D1E159133007BC2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85C1717F1E159133007BC2C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85C171821E159133007BC2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				85C171781E159133007BC2C3 /* AppDelegate.swift */,
-				85C1717A1E159133007BC2C3 /* ViewController.swift */,
+				85C1717A1E159133007BC2C3 /* WeatherVC.swift */,
 				85C1717C1E159133007BC2C3 /* Main.storyboard */,
 				85C1717F1E159133007BC2C3 /* Assets.xcassets */,
 				85C171811E159133007BC2C3 /* LaunchScreen.storyboard */,
@@ -449,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85C1717B1E159133007BC2C3 /* ViewController.swift in Sources */,
+				85C1717B1E159133007BC2C3 /* WeatherVC.swift in Sources */,
 				85C171791E159133007BC2C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +705,7 @@
 				85C1719F1E159133007BC2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85C171A01E159133007BC2C3 /* Build configuration list for PBXNativeTarget "WeatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +714,7 @@
 				85C171A21E159133007BC2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85C171A31E159133007BC2C3 /* Build configuration list for PBXNativeTarget "WeatherAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +723,7 @@
 				85C171A51E159133007BC2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
