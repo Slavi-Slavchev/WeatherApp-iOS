@@ -169,6 +169,14 @@
                             <constraint firstItem="Tyy-qv-kVP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wdf-H5-UIc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTempLable" destination="s4H-2i-JGQ" id="XSe-TA-VAl"/>
+                        <outlet property="currentWeatherImage" destination="NxC-7e-VwW" id="gq7-Lr-rsm"/>
+                        <outlet property="currentWeatherTypeLable" destination="Hl6-Z0-9Jo" id="kfC-Ff-2Id"/>
+                        <outlet property="dateLable" destination="LBi-Kj-hA3" id="6Xr-2Y-Jgw"/>
+                        <outlet property="locationLabel" destination="SpS-HE-Bbz" id="Hj6-D9-Qej"/>
+                        <outlet property="tableView" destination="6oh-v1-fet" id="HEj-6J-5wL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
