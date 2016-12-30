@@ -49,7 +49,7 @@ class CurrentWeather {
         return _currentTemp
     }
     
-    func downloadWeatherDetails(completed: DownloadComplete) {
+    func downloadWeatherDetails(completed: @escaping DownloadComplete) {
         //Alamofire download
         
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
@@ -80,8 +80,9 @@ class CurrentWeather {
                     }
                 }
             }
+            completed()
         }
-        completed()
+        
     }
     
 }
